@@ -1,0 +1,14 @@
+# Rust build artifacts & OpenRS2 local download cache
+server/target/
+server/.cache/
+worker/wasm/target/
+
+# Generated edge deployment artifacts (rebuilt by worker/deploy.ps1)
+worker/src/runeql_worker.wasm
+worker/src/catalog.rql.gz
+
+# Wrangler & Node local files
+worker/.wrangler/
+**/node_modules/
+.DS_Store
+Thumbs.db
